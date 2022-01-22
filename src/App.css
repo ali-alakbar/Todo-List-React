@@ -1,38 +1,323 @@
-.App {
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .line {
+    width: 750px;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+* {
+  font-family: "PT Mono", monospace;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#000));
+  background: linear-gradient(180deg, #181818, #000);
+  background-attachment: fixed;
+}
+
+#root .special-heading {
+  color: #44f1a6;
   text-align: center;
+  margin-bottom: 7rem;
+  margin-top: 4rem;
+  border: solid 1px #44f1a6;
+  padding: 5px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root .special-heading img {
+  width: 4%;
+  position: relative;
+  rotate: 25deg;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root .special-heading img:hover {
+  rotate: 385deg;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root .special-heading .title {
+  margin: 5px 0;
+}
+
+#root .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40%;
+      grid-template-columns: 1fr 40%;
+}
+
+#root .content .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+#root .content .infoContainer .warnning {
+  color: #44f1a6;
+  font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#root .content .infoContainer .box {
+  width: 440px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #182329;
+  border: solid 1px #44f1a6;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 10px;
+  -ms-grid-columns: 10% 1fr;
+      grid-template-columns: 10% 1fr;
+  word-wrap: anywhere;
+}
+
+#root .content .infoContainer .box .task-right-side {
+  position: relative;
+  height: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .content .infoContainer .box .task-right-side::after {
+  content: "";
+  position: absolute;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  border-right: 1px solid #393939;
+  top: -1px;
+  bottom: -1px;
+  border-top-right-radius: 2px;
+  left: -50%;
+  right: -1rem;
+}
+
+#root .content .infoContainer .box .task-right-side span {
+  cursor: pointer;
+}
+
+#root .content .infoContainer .box .task-right-side span .icon {
+  cursor: pointer;
+  position: relative;
+  z-index: 22222;
+  padding: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#root .content .infoContainer .box .task-right-side span .icon:hover {
+  color: #44f1a6;
+}
+
+#root .content .infoContainer .box .task-right-side span .active {
+  font-size: 25px;
+  color: #44f1a6;
+  display: none;
+}
+
+#root .content .infoContainer .box .task-left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+}
+
+#root .content .infoContainer .box .task-left-side p {
+  font-size: 14px;
+}
+
+#root .content .infoContainer .box .task-left-side p span {
+  font-weight: bold;
+  font-size: initial;
+  color: #44f1a6;
+}
+
+#root .content .infoContainer .box .task-left-side .active {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: #44f1a6;
+          text-decoration-color: #44f1a6;
+  text-decoration-thickness: 4px;
+}
+
+#root .content .infoContainer .box .task-left-side .closeIcon {
+  cursor: pointer;
+  padding: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#root .content .infoContainer .box .task-left-side .closeIcon:hover {
+  color: #44f1a6;
+}
+
+#root .content .myForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .content .myForm img {
+  width: 60%;
+  opacity: 0.5;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  margin-top: 50px;
+}
+
+#root .content .myForm .inputContainer label {
+  display: inline-block;
+  color: #fff;
+  margin: -10px 0;
+}
+
+#root .content .myForm .inputContainer input {
+  width: 300px;
+  margin: 1.5rem 0;
+  height: 40px;
+  border: solid 1px #44f1a6;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #44f1a6;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#root .content .myForm .inputContainer input:focus {
+  -webkit-box-shadow: 0px 0px 20px 3px #b4b4b4;
+          box-shadow: 0px 0px 20px 3px #b4b4b4;
+  border: solid 1px #b4b4b4;
+  color: #fff;
+}
+
+#root .content .myForm #submitInput {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #182329;
+  border: solid 1px #44f1a6;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  padding: initial;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+#root .content .myForm #submitInput:hover {
+  background: #44f1a6;
+  color: #000;
+}
+
+/* Medium  */
+@media (max-width: 992px) {
+  #root .special-heading img {
+    width: 5%;
   }
-  to {
-    transform: rotate(360deg);
+  #root .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #root .content .infoContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #root .content .infoContainer .box {
+    width: 100%;
+  }
+  #root .content .myForm img {
+    margin-top: 0;
+    margin-bottom: 50px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #root .content .myForm .inputContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #root .content .myForm .inputContainer input:focus {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    border: solid 1px #44f1a6;
+    color: #44f1a6;
+  }
+  #root .content .myForm #submitInput {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #root .content .myForm #submitInput:hover {
+    background-color: #182329;
+    border: solid 1px #44f1a6;
+    color: #fff;
   }
 }
+
+/* Small  */
+@media (max-width: 768px) {
+  #root .special-heading img {
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
