@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.9056cac8.js",
-    "static/js/787.c543946c.chunk.js": "/static/js/787.c543946c.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.9056cac8.js.map": "/static/js/main.9056cac8.js.map",
-    "787.c543946c.chunk.js.map": "/static/js/787.c543946c.chunk.js.map"
+    "main.css": "/todolist_react/static/css/main.5bd4dc64.css",
+    "main.js": "/todolist_react/static/js/main.d5e6bda8.js",
+    "static/media/space-shuttle.png": "/todolist_react/static/media/space-shuttle.d4a77eafa9b2745ffbd3.png",
+    "static/media/img_one.svg": "/todolist_react/static/media/img_one.4d58ab6778e81d25e46e027054222fbf.svg",
+    "index.html": "/todolist_react/index.html",
+    "main.5bd4dc64.css.map": "/todolist_react/static/css/main.5bd4dc64.css.map",
+    "main.d5e6bda8.js.map": "/todolist_react/static/js/main.d5e6bda8.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9056cac8.js"
+    "static/css/main.5bd4dc64.css",
+    "static/js/main.d5e6bda8.js"
   ]
 }
