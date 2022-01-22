@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todolist_react/static/css/main.5bd4dc64.css",
+    "main.js": "/todolist_react/static/js/main.d5e6bda8.js",
+    "static/media/space-shuttle.png": "/todolist_react/static/media/space-shuttle.d4a77eafa9b2745ffbd3.png",
+    "static/media/img_one.svg": "/todolist_react/static/media/img_one.4d58ab6778e81d25e46e027054222fbf.svg",
+    "index.html": "/todolist_react/index.html",
+    "main.5bd4dc64.css.map": "/todolist_react/static/css/main.5bd4dc64.css.map",
+    "main.d5e6bda8.js.map": "/todolist_react/static/js/main.d5e6bda8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bd4dc64.css",
+    "static/js/main.d5e6bda8.js"
+  ]
+}
